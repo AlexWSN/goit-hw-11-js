@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.header {
+  background-color: #007bff; /* Banda albastră */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Înălțimea benzii */
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  width: 50%; /* Lățimea barei de căutare */
+  max-width: 400px; /* Lățimea maximă */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.search-form input {
+  flex-grow: 1;
+  padding: 8px; /* Reduce padding-ul */
+  font-size: 14px; /* Diminuează font-ul */
+  border: none;
+  outline: none;
+}
+
+.search-form button {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #003f7f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px; /* Spațiu între galerie și margini */
+}
+
+.photo-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: scale(1.05);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
